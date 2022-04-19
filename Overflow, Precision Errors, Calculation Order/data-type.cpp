@@ -20,6 +20,7 @@ int main()
 {
 
     cout << "print c ascii value:" << (int)'c' << '\n'; // 99
+    
     char a = 'c' + 1;
     cout << "print c ascii value+1 then convert char :" << a << '\n'; // 'd'
 
