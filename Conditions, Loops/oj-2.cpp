@@ -1,3 +1,4 @@
+
 // find last digit of number
 
 // #include <bits/stdc++.h>
@@ -10,38 +11,30 @@
 //     cout << sum;
 // }
 
-// // sum of digit
+/* You're given an integer N. Write a program to calculate the sum of all the digits of N.
 
-// #include <bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int n, sum = 0;
-//     cin >> n;
-//     while(n!=0){
-//         int last_digit = n % 10;
-//         sum=sum+last_digit;
-//         n=n/10;
-//     }
-//     cout << sum;
-// }
+Input:The first line contains an integer T, the total number of testcases. Then follow T lines, each line contains an integer N.
 
+Output:For each test case, calculate the sum of digits of N, and display it in a new line.
 
-// reverse number
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+   main()
 {
-    int n, rev = 0;
-    cin >> n;
-    while (n != 0)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int last_digit = n % 10;
-        rev = rev * 10 + last_digit;
-        n = n / 10;
+        int n;
+        cin >> n;
+        int sum = 0;
+        while (n > 0)
+        {
+            sum += n % 10;
+            n /= 10;
+        }
+        cout << sum << endl;
     }
-    cout << rev;
 }
-// 12345
-//last_digit= 12345%10 = 5
-// rev=0*10+5 = 5
-// n=12345/10 = 1234
